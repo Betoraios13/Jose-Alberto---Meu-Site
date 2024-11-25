@@ -1,0 +1,103 @@
+.title{
+    margin-top: 5%;
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    text-shadow: 5px 5px 10px black;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+}
+
+.title img{
+    width: 25%;
+    border-radius: 50%;
+    border:5px solid  rgb(59, 59, 102);
+    box-shadow: 5px 5px 10px black;
+}
+
+.sobre{
+    margin: 0;
+    width: 100%;
+    color:aliceblue;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.sobre h1{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 2% auto 5% auto;
+}
+
+.sobre #painel{
+    width: 100%;
+    background-color: rgb(50, 50, 97);
+    box-shadow: 0px 1px 10px black;
+}
+
+.sobre #painel p{
+    padding: 2% 25% 1% 25%;
+}
+
+.sobre #painel p::first-letter{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.sobre #painel p img{   
+    float: left;
+    width: 250px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+}
+
+.sobre #painel h3{
+    padding: 0 25% 0 25%;
+    font-size: x-large;
+}
+
+.sobre .painel .intro{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px){
+    .title{
+        display: none;
+    }
+
+    .sobre h1{
+        font-family: "Pixelify Sans", sans-serif;
+        font-size: 40px;
+        text-align: center;
+        margin: 15% auto 13% auto;
+    }
+
+    .sobre #painel p img{   
+        float: left;
+        width: 150px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        border-radius: 30px;
+    }
+
+    .sobre #painel p{
+        padding: 2% 5% 1% 5%;
+    }
+    
+    .sobre #painel p::first-letter{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .sobre #painel h3{
+        padding: 0 5% 0 5%;
+        font-size: x-large;
+    }
+}

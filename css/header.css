@@ -1,0 +1,177 @@
+header{
+    width: 100%; 
+    height: 90px;
+
+    opacity: 0.9;
+
+    background-color: rgb(27, 27, 27);
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid white;
+    box-shadow: 0px 3px 10px black;
+
+    z-index: 3;
+}
+
+header a{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size:medium;
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+header a:hover{
+    display: inline-block;
+    text-decoration: underline;
+    transform: scale(1.2) !important;
+    transition: 0.5s;
+}
+
+header #lar{
+    display: flex;
+}
+
+header #lar img{
+    border-radius: 30%;
+    border:2px solid  rgb(59, 59, 102);
+    width: 65px;
+}
+
+header .navmenu2 h1{
+    display: none;
+}
+
+/* Left*/
+header .navmenu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header .navmenu li:first-child{
+    padding-left: 30px;
+}
+
+header .navmenu li:nth-child(n+2){
+    padding-left: 30px;
+}
+
+/*Right*/
+header .menuaccount{
+    display: flex;
+    list-style: none;
+} 
+
+header .menuaccount li:first-child{
+    padding-right: 30px;
+}
+
+header .menuaccount li:last-child{
+    padding-right: 60px;
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        width: 100%; 
+        height: 230px;
+    
+        background-color: rgb(27, 27, 27);
+    
+        display: flex;
+        justify-content: space-between;
+    
+        border-bottom: 2px solid white;
+        box-shadow: 0px 1px 10px black;
+    }
+
+    header .navmenu a{
+        font-family: "Pixelify Sans", sans-serif;
+        font-size: 20px;
+        color: white;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+    
+    header a:hover{
+        display: inline-block;
+        text-decoration: none;
+        transform: scale(1) !important;
+        transition: 0.5s;
+    }
+
+    header #lar{
+        width: 100%;
+        display: flex;
+    }
+    
+    header #lar img{
+        border-radius: 30%;
+        border:2px solid  rgb(59, 59, 102);
+        width: 100px;
+    }
+
+    header .navmenu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        margin: 0;
+        margin-left: 20%;
+        padding: 0;
+    }
+    
+    header .navmenu li:first-child{
+        margin: 0;
+        padding-left: 0;
+        padding-bottom: 10px;
+    }
+    
+    header .navmenu li:nth-child(n+2){
+        margin: 0;
+        padding-left: 0px;
+        padding-bottom: 10px;
+    }
+
+    header .navmenu2{
+        font-family: "Pixelify Sans", sans-serif;
+        color: aliceblue;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        margin-right: 7%;
+    }
+
+    header .navmenu2 h1{
+        font-size: 25px;
+        font-weight: lighter;
+        margin-left: 30;
+        display: initial;
+    }
+
+    header .menuaccount{
+        height: 100%;
+        display: flex;
+        justify-content: right;
+        margin-top: 30px;
+    } 
+
+    header .menuaccount a{
+        font-size: 15px;
+        background-color: rgb(60, 74, 105);
+        padding: 1px;
+        border-radius: 30px;
+        box-shadow: 3px 3px 10px black;
+    }
+    
+    header .menuaccount li:last-child{
+        padding-right: 2px;
+        padding-bottom: 20px;
+    }
+}

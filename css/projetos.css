@@ -6,8 +6,8 @@
 }
 
 .projetos h1{
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 50px;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 4vw;
     text-align: center;
     margin: 7% auto 5% auto;
 }
@@ -15,21 +15,22 @@
 .projetos #painel{
     width: 100%;
     background-color: rgb(71, 82, 67);
-    box-shadow: 0px 1px 10px black;
+    box-shadow: 0px 0.2vw 1.2vw black;
 }
 
 .projetos #painel p{
-    padding: 2% 25% 1% 25%;
+    padding: 2% 20% 1% 20%;
+    font-size: 1.3vw;
 }
 
 .projetos #painel p::first-letter{
-    font-size: 20px;
+    font-size: 1.5vw;
     padding-left: 20px;
 }
 
 .projetos #painel h3{
     padding: 0 25% 0 25%;
-    font-size: x-large;
+    font-size: 2vw;
 }
 
 .projetos #painel ul{
@@ -46,6 +47,7 @@
 
 .projetos #painel ul li{
     margin-left: 5%;
+    font-size: 1.3vw;
 }
 
 .projetos #painel ul li a{
@@ -55,6 +57,7 @@
 .projetos #painel span{
     color: yellow;
     padding: 0 25% 0 25%;
+    font-size: 1.3vw;
 }
 
 .projetos #painel .potatoimg{
@@ -66,10 +69,10 @@
 }
 
 .projetos #painel .potatoimg img{
-    width: 50%;
-    border-radius: 30px;
-    border: solid 10px rgb(75, 75, 161);
-    box-shadow: 5px 5px 10px black;
+    width: 60%;
+    border-radius: 1vw;
+    border: solid 0.8vw rgb(75, 75, 161);
+    box-shadow: 0.5vw 0.5vw 1.2vw black;
 }
 
 .projetos #painel .personas{

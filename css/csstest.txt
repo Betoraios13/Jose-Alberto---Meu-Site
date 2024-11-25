@@ -1,81 +1,4 @@
-header{
-    width: 100%; 
-    height: 7vw;
-
-    opacity: 0.9;
-
-    background-color: rgb(27, 27, 27);
-
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
-
-    border-bottom: 2px solid white;
-    box-shadow: 0px 0.2vw 1.2vw black;
-
-    z-index: 3;
-}
-
-header a{
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 1.2vw;
-    color: white;
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-header a:hover{
-    display: inline-block;
-    text-decoration: underline;
-    transform: scale(1.2) !important;
-    transition: 0.5s;
-}
-
-header #lar{
-    display: flex;
-}
-
-header #lar img{
-    border-radius: 30%;
-    border:2px solid  rgb(59, 59, 102);
-    width: 5vw;
-}
-
-header .navmenu2 h1{
-    display: none;
-}
-
-/* Left*/
-header .navmenu{
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-header .navmenu li:first-child{
-    padding-left: 1vw;
-}
-
-header .navmenu li:nth-child(n+2){
-    padding-left: 2vw;
-}
-
-/*Right*/
-header .menuaccount{
-    display: flex;
-    list-style: none;
-} 
-
-header .menuaccount li:first-child{
-    padding-right: 3vw;
-}
-
-header .menuaccount li:last-child{
-    padding-right: 2vw;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px){
     header{
         width: 100%; 
         height: 230px;
@@ -91,7 +14,7 @@ header .menuaccount li:last-child{
 
     header .navmenu a{
         font-family: "Pixelify Sans", sans-serif;
-        font-size: 20px;
+        font-size: 180px;
         color: white;
         transition: 0.5s;
         text-decoration: none;
@@ -174,4 +97,4 @@ header .menuaccount li:last-child{
         padding-right: 2px;
         padding-bottom: 20px;
     }
-}
+} 

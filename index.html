@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meu Layout</title>
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/pequenomeu.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/sliders.css">
@@ -14,15 +15,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body id="corpo">
         
-        <header id="inicio">
+        <header class="headerfixo">
             <nav class="menu">
                 <ul class="navmenu">
                     <li><a href="#" id="lar"><img src="images/logo/JA.png" alt="logo"></a></li>
                     <li><a href="#isobre">SOBRE</a></li>
                     <li><a href="#iprojetos">PROJETOS</a></li>
-                    <li><a href="#">COMENTÁRIOS</a></li>
+                    <li><a href="#" class="debug">COMENTÁRIOS</a></li>
                     <li><a href="#contatos">CONTATOS</a></li>
                 </ul>
             </nav>
@@ -34,6 +35,29 @@
                 </ul>
             </div>
         </header>
+        <header class="headerNaofixo">
+            <nav class="menu">
+                <ul class="navmenu">
+                    <li><a href="#" id="lar"><img src="images/logo/JA.png" alt="logo"></a></li>
+                    <li><a href="#isobre">SOBRE</a></li>
+                    <li><a href="#iprojetos">PROJETOS</a></li>
+                    <li><a href="#" class="debug">COMENTÁRIOS</a></li>
+                    <li><a href="#contatos">CONTATOS</a></li>
+                </ul>
+            </nav>
+            <div class="navmenu2">
+                <h1>José Alberto - <br> - Desenvolvedor -<br>- Estudante de Ciência da Computaçãor</h1>
+                <ul class="menuaccount">
+                    <li><a href="#">ENTRAR</a></li>
+                    <li><a href="#">REGISTRAR</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="pequenomenu" id="invisible">
+            <img src="images/logo/JA.png">
+        </div>
+
         <main>            
             <div class="sliders" id="i_sliders">
                 <div class="container">
@@ -205,7 +229,7 @@
         <footer>
             <div class="importante">
                 <div class="referencias">
-                    <p>Feito por José Alberto Martins Gomes da Silva</p>
+                    <p>Site feito por José Alberto Martins Gomes da Silva</p>
                     <p>Contato: <a href="mailto:josealberto777@gmail.com">Me mande uma mensagem por email!</a></p>
                     <br>
                     <p>Unity Technologies: <a href="http://www.unity.com">http://www.unity.com</a></p>
@@ -228,10 +252,11 @@
                     <a href="#"><img src="images/caminhosimg/LinkedIn App Icon.jpeg" alt="MeuLinkedin"></a>
                 </div>
                 <div class="logoFooter">
-                    <a href="#inicio"><img src="images/logo/JA.png" alt="Logo do site"></a>
+                    <a href="#"><img src="images/logo/JA.png" alt="Logo do site"></a>
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
         <script src="scripts/slider.js"></script>
     </body>
 </html>

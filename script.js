@@ -1,36 +1,34 @@
-function isElementVisible(el) {
-    const rect = el.getBoundingClientRect();
-    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-    const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+const headerfixo = document.querySelector('.headerfixo');
+const headerNaofixo = document.querySelector('.headerNaofixo');
 
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= windowHeight &&
-        rect.right <= windowWidth
-    );
-}
+let lastValue = window.scrollY;
+let subindo = false;
 
-function isElementPartiallyVisible(el){
-    const rect = el.getBoundingClienteRect();
-    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-    const windowWidth = window.innerWidth || document.documentElement.clientWidth;
-
-    return(
-        rect.top < windowHeight &&
-        rect.bottom > 0 &&
-        rect.left < windowWidth &&
-        rect.right > 0
-    );
-}
-
-document.addEventListener('scroll', () =>{
-    const element  = document.getElementById('id');
-    if(isElementVisible){
-
-    }else if(isElementPartiallyVisible){
-
-    }else{
-        const opa = document.querySelector('opa');
+window.addEventListener('scroll', () =>{
+    const currentValue = window.scrollY;
+    if(currentValue > lastValue){
+        //decendo
+        if(subindo == true){
+            headerfixo.style.animation = 'exitHeaderfixo 1s';
+            headerfixo.style.top = '-8vw';
+            subindo = false;
+        }
+    }else if(currentValue < lastValue){
+        //subindo
+        if(subindo == false){
+            headerfixo.style.animation = 'enterHeaderfixo 1s';
+            headerfixo.style.top = '0vw';
+            headerNaofixo.style.opacity = '0';
+            headerNaofixo.style.pointerEvents = 'none';
+            subindo = true;
+        }
+    }
+    lastValue = currentValue;
+    if(scrollY == 0){
+        subindo = false;
+        headerfixo.style.animation = 'none';
+        headerfixo.style.top = '-8vw';
+        headerNaofixo.style.opacity = '1';
+        headerNaofixo.style.pointerEvents = 'auto';
     }
 });

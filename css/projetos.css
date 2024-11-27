@@ -25,6 +25,7 @@
 
 .projetos #painel p::first-letter{
     font-size: 1.5vw;
+    font-weight: bold;
     padding-left: 20px;
 }
 
@@ -115,10 +116,11 @@
 
     .projetos #painel p{
         padding: 2% 5% 1% 5%;
+        font-size: 3.7vw;
     }
     
     .projetos #painel p::first-letter{
-        font-size: 20px;
+        font-size: 4vw;
         padding-left: 20px;
     }
 
@@ -164,5 +166,17 @@
     .projetos #painel .personas p{
         width: 100%;
         padding: 0;
+        font-size: 3.7vw;
+    }
+
+    .projetos #painel ul li{
+        margin-left: 5%;
+        font-size: 3.7vw;
+    }
+
+    .projetos #painel span{
+        color: yellow;
+        padding: 0 25% 0 25%;
+        font-size: 3.7vw;
     }
 }

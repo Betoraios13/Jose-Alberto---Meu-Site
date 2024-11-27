@@ -86,6 +86,10 @@ footer .redes img{
 
 @media screen and (max-width: 600px) {
 
+    footer{
+        font-size: 3.7vw;
+    }
+
     footer a{
         color: rgb(129, 129, 129);
         margin: 0;
@@ -149,4 +153,8 @@ footer .redes img{
         margin: 2% 0 2% 0;
     }
 
+    footer .redes img{
+        width: 15vw;
+        text-align: center;
+    }
 }

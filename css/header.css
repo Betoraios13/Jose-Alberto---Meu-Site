@@ -1,4 +1,4 @@
-.headerNaofixo{
+.we_header{
     width: 100%;
     height: 7vw;
     opacity: 1;
@@ -11,19 +11,9 @@
     z-index: 3;
 }
 
-.headerfixo{
-    width: 100%;
-    height: 7vw;
-    opacity: 0.9;
-    background-color: rgb(27, 27, 27);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid white;
-    box-shadow: 0px 0.2vw 1.2vw black;
+.we_header_fix{
     position: fixed;
     top: -8vw;
-    z-index: 3;
 }
 
 @keyframes enterHeaderfixo{
@@ -68,11 +58,6 @@ header #lar img{
     border:2px solid  rgb(59, 59, 102);
     width: 5vw;
 }
-
-header .navmenu2 h1{
-    display: none;
-}
-
 /* Left*/
 header .navmenu{
     display: flex;
@@ -89,23 +74,11 @@ header .navmenu li:nth-child(n+2){
 }
 
 /*Right*/
-header .menuaccount{
-    display: flex;
-    list-style: none;
-} 
-
-header .menuaccount li:first-child{
-    padding-right: 3vw;
-}
-
-header .menuaccount li:last-child{
-    padding-right: 2vw;
-}
 
 @media screen and (max-width: 600px) {
-    header{
+    .we_header{
         width: 100%; 
-        height: 230px;
+        height: 16vw;
     
         background-color: rgb(27, 27, 27);
     
@@ -118,7 +91,7 @@ header .menuaccount li:last-child{
 
     header .navmenu a{
         font-family: "Pixelify Sans", sans-serif;
-        font-size: 20px;
+        font-size: 13px;
         color: white;
         transition: 0.5s;
         text-decoration: none;
@@ -139,66 +112,16 @@ header .menuaccount li:last-child{
     header #lar img{
         border-radius: 30%;
         border:2px solid  rgb(59, 59, 102);
-        width: 100px;
-    }
-
-    header .navmenu{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        align-items: center;
-        margin: 0;
-        margin-left: 20%;
-        padding: 0;
+        width: 50px;
     }
     
     header .navmenu li:first-child{
         margin: 0;
         padding-left: 0;
-        padding-bottom: 10px;
     }
     
     header .navmenu li:nth-child(n+2){
         margin: 0;
-        padding-left: 0px;
-        padding-bottom: 10px;
-    }
-
-    header .navmenu2{
-        font-family: "Pixelify Sans", sans-serif;
-        color: aliceblue;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        gap: 1px;
-        margin-right: 7%;
-    }
-
-    header .navmenu2 h1{
-        font-size: 25px;
-        font-weight: lighter;
-        margin-left: 30;
-        display: initial;
-    }
-
-    header .menuaccount{
-        height: 100%;
-        display: flex;
-        justify-content: right;
-        margin-top: 30px;
-    } 
-
-    header .menuaccount a{
-        font-size: 15px;
-        background-color: rgb(60, 74, 105);
-        padding: 1px;
-        border-radius: 30px;
-        box-shadow: 3px 3px 10px black;
-    }
-    
-    header .menuaccount li:last-child{
-        padding-right: 2px;
-        padding-bottom: 20px;
+        padding-left: 10px;
     }
 }

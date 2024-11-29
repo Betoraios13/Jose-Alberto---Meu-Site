@@ -9,7 +9,7 @@ window.addEventListener('scroll', () =>{
     if(currentValue > lastValue){
         //decendo
         if(subindo == true){
-            header.style.animation = 'exitHeaderfixo 1s';
+            header.style.animation = 'exitHeaderfixo 0.5s';
             header.style.top = `-${headerHeight}vw`;
             subindo = false;
         }
@@ -18,7 +18,8 @@ window.addEventListener('scroll', () =>{
         if(subindo == false){
             header.classList.add('we_header_fix');
             body.style.marginTop = `${7}vw`;
-            header.style.animation = 'enterHeaderfixo 1s';
+            header.style.animation = 'enterHeaderfixo 0.5s';
+            header.style.opacity = '0.8';
             header.style.top = '0vw';
             subindo = true;
         }
@@ -26,9 +27,12 @@ window.addEventListener('scroll', () =>{
     lastValue = currentValue;
     if(scrollY == 0){
         subindo = false;
-        header.style.animation = 'none';
-        header.style.top = `-${headerHeight}vw`;
-        header.classList.remove('we_header_fix');
-        body.style.marginTop = '0vw';
+        if(subindo == false){
+            header.style.animation = 'none';
+            header.style.top = `-${headerHeight}vw`;
+            header.style.opacity = '1';
+            header.classList.remove('we_header_fix');
+            body.style.marginTop = '0vw';
+        }
     }
 });
